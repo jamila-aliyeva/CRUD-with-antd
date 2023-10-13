@@ -119,7 +119,7 @@ const Teachers = () => {
     setData(filteredData);
   }, [searchQuery]);
 
-  const onSearch = async (value, _e, info) => {
+  const onSearch = async (value) => {
     try {
       setLoading(true);
       let { data } = await request.get(`/teachers?search=${value}`, {

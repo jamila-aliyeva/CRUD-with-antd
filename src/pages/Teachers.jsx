@@ -167,6 +167,7 @@ const Teachers = () => {
       const fullName = `${item.fullName}`.toLowerCase();
       return fullName.includes(searchQuery.trim().toLowerCase());
     });
+    setData(filteredData);
   }, [searchQuery]);
 
   const confirm = (e) => {
